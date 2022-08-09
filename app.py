@@ -24,10 +24,10 @@ app = Flask(__name__)
 app.config['MYSQL_DATABASE_HOST'] = 'us-cdbr-east-06.cleardb.net:3306'
 app.config['MYSQL_DATABASE_USER'] = 'bf295611377f12'
 app.config['MYSQL_DATABASE_PASSWORD'] = '98faa6dc'
-app.config['MYSQL_DATABASE_DB'] = 'remote cleardb mysql'
+app.config['MYSQL_DATABASE_DB'] = 'heroku_da6e870bd562fec'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql = MySQL(app)
-mysql.init_app(app)
+
 app.secret_key = env.get("APP_SECRET_KEY")
 
 app.config['MAIL_SERVER'] = env.get("MAIL_SERVER")
