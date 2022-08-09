@@ -21,7 +21,7 @@ if ENV_FILE:
     load_dotenv(ENV_FILE)
 
 app = Flask(__name__)
-app.config['MYSQL_DATABASE_HOST'] = 'us-cdbr-east-06.cleardb.net'
+app.config['MYSQL_DATABASE_HOST'] = 'us-cdbr-east-06.cleardb.net:3306'
 app.config['MYSQL_DATABASE_USER'] = 'bf295611377f12'
 app.config['MYSQL_DATABASE_PASSWORD'] = '98faa6dc'
 app.config['MYSQL_DATABASE_DB'] = 'remote cleardb mysql'
